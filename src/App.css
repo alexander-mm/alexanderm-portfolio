@@ -1,0 +1,283 @@
+
+*{  
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Play', sans-serif;
+}
+
+body {
+    background-image: url(../src/assets/img/logos/fondo.jpg);
+    background-size: 120em;
+    background-attachment: fixed;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-image: linear-gradient( 109.6deg,  rgb(1, 12, 15) 11.2%, rgb(15, 94, 112) 91.1% );
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 1000;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+.navbar-logo a {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+.logo-nav {
+    margin-top: 4px;
+    margin-right: 1em;
+    width: 1.5em;
+  }
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.navbar-menu li {
+    margin-right: 30px;
+    padding: 0.3em;
+}
+.navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+  .navbar-toggle {
+    display: none;
+}
+.welcome {
+    margin-top: 6em;
+    background-image: linear-gradient( 109.6deg,  rgb(1, 12, 15) 11.2%, rgb(15, 94, 112) 91.1% );
+    color: #fff;
+    text-align: center;
+
+    & h3 {
+        animation-name: aparecer;
+        animation-duration: 1.8s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+}
+.about {
+    background-image: linear-gradient( 109.6deg,  rgb(1, 12, 15) 11.2%, rgb(15, 94, 112) 91.1% );
+    color: #fff;
+    text-align: center;
+    line-height: 1.5em;
+}
+.skills {
+    margin-top: 5em;
+    background-image: linear-gradient( 109.6deg,  rgb(1, 12, 15) 11.2%, rgb(15, 94, 112) 91.1% );    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+}
+.skills-item {
+    height: 8em;
+    margin: 1em;
+}
+
+.experience {
+    margin-top: 2em !important;
+}
+.job-item {
+    height: 16em;
+    margin: 1em;
+}
+footer {
+    margin-top: 1em;
+    padding: 1.5em 0;
+    background-image: linear-gradient( 109.6deg,  rgb(1, 12, 15) 11.2%, rgb(15, 94, 112) 91.1% );
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.footer-item {
+    width: 10em;
+}
+
+@keyframes aparecer {
+    0% {
+      opacity: 0%; }
+    50% {
+      opacity: 100%; }
+    100% {
+      opacity: 0%; }
+}
+
+.embla {
+    overflow: hidden;
+  }
+  .embla__container {
+    display: flex;
+  }
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+  }
+  
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+    .navbar-menu.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-image: linear-gradient( 109.6deg,  rgb(1, 12, 15) 11.2%, rgb(15, 94, 112) 91.1% );
+        z-index: 1;
+    }
+    .navbar-menu {
+        display: none;
+    }
+    .navbar-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 30px;
+        height: 22px;
+        cursor: pointer;
+    }
+    .navbar-toggle span {
+        margin-right: 3em;
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 3px;
+    }
+
+    .welcome {
+        padding: 7em 0 7em 0;
+        font-size: 1.5em;
+    }
+    .about {
+        margin-top: 4em;
+        padding: 4em 2em;
+    }
+    .skills {
+        padding: 4em 0 ;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .navbar-menu.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-image: linear-gradient( 109.6deg,  rgb(1, 12, 15) 11.2%, rgb(15, 94, 112) 91.1% );
+        z-index: 1;
+    }
+    .navbar-menu {
+      display: none;
+    }
+    .navbar-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 30px;
+        height: 22px;
+        cursor: pointer;
+    }
+    .navbar-toggle span {
+        margin-right: 3em;
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 3px;
+    }
+
+    .welcome {
+        padding: 7em 0 7em 0;
+        font-size: 1.5em;
+    }
+    .about {
+        margin-top: 4em;
+        padding: 7em 2em;
+    }
+    .skills {
+        padding: 4em 0 ;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .welcome {
+        padding: 7em 0 7em 0;
+        font-size: 1.5em;
+    }
+    .about {
+        margin-top: 4em;
+        padding: 5em 2em;
+        font-size: 1.2em;
+    }
+    .skills {
+        padding: 4em 0 ;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    .welcome {
+        padding: 8em 0 8em 0;
+        font-size: 1.5em;
+    }
+    .about {
+        line-height: 1.8em;
+        margin-top: 4em;
+        padding: 6em 2em;
+        font-size: 1.2em;
+    }
+    .skills {
+        padding: 5em 0 ;
+    }
+}
+
+@media screen and (min-width: 1201px){
+    .welcome {
+        margin-top: 4.5em;
+        padding: 8em 0em;
+        font-size: 2em;
+    }
+    .about {
+        line-height: 2.3em;
+        margin-top: 4em;
+        padding: 8em 10em;
+        font-size: 1.4em;
+    }
+    .skills {
+        padding: 5em 0 ;
+    }
+}
